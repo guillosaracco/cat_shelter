@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @cage.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @cage.location %>
+</p>
+
+<p>
+  <strong>Max capacity:</strong>
+  <%= @cage.max_capacity %>
+</p>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @cage.employee.name %>
+</p>
+
+<%= link_to 'Edit', edit_cage_path(@cage) %> |
+<%= link_to 'Back', cages_path %>
